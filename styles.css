@@ -1,0 +1,158 @@
+body {
+    font-family: sans-serif; 
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom right, #362f47, #929196,#ab98da, #362f47);
+    background-color: #ffb5de; 
+   
+}
+/* Specific styles for the Arabic page */
+body.arabic-page {
+    position: relative; /* Ensure relative positioning for the pseudo-element */
+    min-height: 100vh;
+}
+
+body.arabic-page::before {
+    content: "";
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('media/pexels-julia-volk-6131330.jpg');
+    background-size: cover;
+    background-position: center;
+    filter: blur(9px);
+    z-index: -1; 
+}
+
+header, nav, section, footer {
+    position: relative;
+    z-index: 1;
+}
+.carousel-item img {
+    margin: 0 auto; 
+    display: block; 
+}
+header {
+   background-color: #180544;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.fit {
+    max-width: 99%;
+    max-height: 99%;
+  }
+  
+nav {
+    background-color: #180544;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+section {
+    padding: 20px;
+}
+
+
+nav a.current-page {
+    color: #f09db5; 
+    font-weight: bold;
+    text-decoration: underline; 
+}
+
+
+.logo {
+    width: 100px;
+    height: auto;
+}
+
+.centered-text {
+    text-align: center;
+}
+
+.separator {
+    width: 80%;
+    border-top: 5px solid #180544;
+    margin: 40px auto;
+}
+
+.picture-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    flex-direction: column; 
+}
+.header-text {
+    font-family: monospace;
+    font-size: 36px;
+    font-weight: bold;
+    color: white;
+}
+
+
+.picture {
+    text-align: center;
+    margin-bottom: 40px; 
+}
+
+.picture img {
+    width: 300px; 
+    height: auto; 
+    margin-bottom: 20px; 
+}
+
+.picture2 img {
+    width: 500px; 
+    height: auto; 
+    margin-bottom: 20px; 
+}
+.picture-description {
+    font-size: 16px;
+}
+
+.centered-video {
+    text-align: center;
+    margin-top: 40px; 
+}
+
+.centered-video video {
+    width: 60%; 
+    display: block; 
+    margin: 0 auto; 
+}
+.container {
+    background-color: #f2f2f27c; 
+    width: 60%;
+    margin: 0 auto;
+    padding: 20px; 
+}
+table {
+    margin: 0 auto; 
+    border-collapse: collapse; 
+    width: 50%; 
+}
+
+table, th, td {
+    border: 1px solid rgb(255, 240, 240); 
+    padding: 10px; 
+    text-align: center; 
+}
+
+th, td {
+    width: 50%;
+}
+
+.dark-row {
+    background-color: #18054448; /* Set background color for the first row */
+}

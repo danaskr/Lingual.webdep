@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+    <img src="media/logo.jpeg" alt="Logo" class="logo">
+    <h1 class="header-text">lingual</h1>
+    <nav>
+        <a href="index.html">HomePage</a>
+        <a href="review_form.html" class="current-page">Review Form</a>
+        <a href="arabic.html">Arabic</a>
+        <a href="spanish.html">Spanish</a>
+        <a href="kinai.html">Chinese</a>
+    </nav>
+</header>
+
+<section>
+    <div class="container">
+        <div class="centered-text">
+            <h2>Review Form</h2>
+            <form id="review_form" action="mailto:sakerdana1@gmail.com" method="post" enctype="text/plain">
+                <label for="reviewl">The language you would like to review:</label><br>
+                <textarea id="reviewl" name="reviewl" rows="1" cols="50"></textarea><br>
+                <label for="reviewR">Your Review:</label><br>
+                <textarea id="reviewR" name="reviewR" rows="6" cols="50"></textarea><br>
+                <hr class="separator">
+                <label>Rate the teaching assessment:</label><br>
+                <input type="radio" id="teaching-rating-1" name="teaching-rating" value="1">
+                <label for="teaching-rating-1">1</label>
+                <input type="radio" id="teaching-rating-2" name="teaching-rating" value="2">
+                <label for="teaching-rating-2">2</label>
+                <input type="radio" id="teaching-rating-3" name="teaching-rating" value="3">
+                <label for="teaching-rating-3">3</label>
+                <input type="radio" id="teaching-rating-4" name="teaching-rating" value="4">
+                <label for="teaching-rating-4">4</label>
+                <input type="radio" id="teaching-rating-5" name="teaching-rating" value="5">
+                <label for="teaching-rating-5">5</label><br><br>
+
+                <label>Rate the Website:</label><br>
+                <input type="radio" id="website-rating-1" name="website-rating" value="1">
+                <label for="website-rating-1">1</label>
+                <input type="radio" id="website-rating-2" name="website-rating" value="2">
+                <label for="website-rating-2">2</label>
+                <input type="radio" id="website-rating-3" name="website-rating" value="3">
+                <label for="website-rating-3">3</label>
+                <input type="radio" id="website-rating-4" name="website-rating" value="4">
+                <label for="website-rating-4">4</label>
+                <input type="radio" id="website-rating-5" name="website-rating" value="5">
+                <label for="website-rating-5">5</label><br>
+
+                <hr class="separator">
+                <h3>Personal Information:</h3>
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name"><br>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email"><br><br>
+                <input type="checkbox" id="subscribe" name="subscribe">
+                <label for="subscribe">Subscribe to our daily updates</label><br><br>
+                <button class="submit" type="submit">submit</button>
+                <button class="reset" type="reset">reset</button>
+
+            </form>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p class="centered-text">© hdwj3h. All rights reserved to me.</p>
+</footer>
+
+</body>
+</html>
